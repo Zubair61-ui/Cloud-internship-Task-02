@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f5f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0; /* Remove any default margin around body */
+    margin-top: 2rem;
+}
+
+.container {
+    display: flex;
+    width: 100%; /* Use 100% width to fill the viewport */
+    max-width: 1200px; /* Set a max-width to prevent it from stretching too much */
+    height: 100%; /* Full height to make sure both sections align */
+    border-radius: 12px;
+    overflow: hidden; /* Ensures the two sections merge seamlessly */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Left Side (Image Section) */
+.img {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the space properly */
+}
+
+/* Right Side (Form Section) */
+.form-container {
+    flex: 1;
+    background: #fff;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; /* Ensures the form fills the height of the container */
+}
+
+/* Form inside the form container */
+#signin-form {
+    width: 80%; /* Makes the form smaller than the container */
+    max-width: 400px; /* Optional: limits the max width of the form */
+    margin: 0 auto; /* Centers the form horizontally */
+}
+
+/* Social Login Buttons */
+.social-login {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.social-btn {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.social-btn:hover {
+    background: #f5f5f7;
+}
+
+/* Input Fields */
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* Continue Button */
+.continue-btn {
+    width: 100%;
+    padding: 12px;
+    background: #333;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.continue-btn:hover {
+    background: #222;
+}
+
+/* Footer Text */
+.signup-link,
+.form-footer {
+    font-size: 14px;
+    color: #666;
+    margin-top: 15px;
+}
+
+.signup-link a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%; /* Adjust width for medium screens */
+        max-width: 900px;
+    }
+
+    .img img {
+        object-fit: cover; /* Maintain image covering */
+    }
+
+    .form-container {
+        padding: 30px; /* Less padding for medium screens */
+    }
+
+    #signin-form {
+        width: 90%; /* Make the form slightly smaller on medium screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px; /* Adds space around container */
+    }
+
+    .img {
+        display: none; /* Hide image on smaller screens */
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 20px;
+        margin: 10px auto; /* Space around the form */
+        border-radius: 8px;
+    }
+
+    /* Font sizes */
+    .form-container h1 {
+        font-size: 20px;
+    }
+
+    .form-container p {
+        font-size: 14px;
+    }
+
+    .signup-link,
+    .form-footer {
+        font-size: 12px;
+    }
+
+    #signin-form {
+        width: 100%;
+        max-width: none;
+    }
+
+    .social-login {
+        flex-direction: column;
+    }
+
+    .social-btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form-container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .form-container h1 {
+        font-size: 18px;
+    }
+
+    .form-container p {
+        font-size: 13px;
+    }
+
+    .social-btn {
+        padding: 8px;
+    }
+
+    .form-control {
+        padding: 10px;
+    }
+
+    .continue-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
