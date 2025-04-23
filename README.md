@@ -1,8 +1,3 @@
-Here’s a clean and professional **GitHub README** for your project, written in Markdown format:
-
----
-
-```markdown
 # 🌐 Secure Website Hosting on AWS EC2
 
 This project demonstrates how to deploy and secure a personal website on the cloud using an **EC2 Ubuntu Server** on **AWS**. The website is hosted via **Apache**, and SSL is configured with **Let's Encrypt** for secure HTTPS access. A domain purchased from **Hostinger** is used to access the website publicly.
@@ -84,5 +79,3 @@ This project is open-source and available under the [MIT License](LICENSE).
 ```
 
 ---
-
-You can copy and paste this into a `README.md` file in your GitHub repo. Want help creating a logo or adding screenshots?
