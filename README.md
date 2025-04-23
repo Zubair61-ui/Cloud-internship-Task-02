@@ -54,7 +54,7 @@ This project demonstrates how to deploy and secure a personal website on the clo
   ```bash
   sudo certbot renew --dry-run
   ```
-![SSL Certificate setup](ssl/ encrypt.png)
+![SSL Certificate setup](ssl/encrypt.png)
 
 ---
 
